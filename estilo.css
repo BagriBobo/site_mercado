@@ -1,11 +1,19 @@
-.banner{
+* {
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: blanchedalmond;
+    font-family: Candara, Helvetica, sans-serif;
+    color: rgb(255, 199, 116);
+    margin: 0;
+    padding: 10px 50px 50px 50px;
+}
+
+/*.banner{
     height: 25%;
     padding-block: 2px;
     font-size: 200%;
     background-color:rgb(230, 173, 222);
-    
 }
-
-table{
-    left: 1000px;
-}
+*/
