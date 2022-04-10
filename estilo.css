@@ -1,15 +1,23 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: blanchedalmond;
     font-family: Candara, Helvetica, sans-serif;
-    color: rgb(255, 199, 116);
+    color: #ffc774;
     margin: 0;
     padding: 10px 50px 50px 50px;
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logoImg{
+height: 200px;    
+}
 /*.banner{
     height: 25%;
     padding-block: 2px;
