@@ -2,26 +2,48 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: blanchedalmond;
-    font-family: Candara, Helvetica, sans-serif;
-    color: #ffc774;
+h1, h2{
     margin: 0;
-    padding: 10px 50px 50px 50px;
+}
+body {
+    background-color: #ffebcd;
+    font-family: Candara, Helvetica, sans-serif;
+    color: #ff7474;
+    margin: 0;
+    padding: 10px 40px 40px 40px;
+}
+
+header{
+    user-select: none;
+    
 }
 
 #logo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
 #logoImg{
-height: 200px;    
+height: 150px;    
+pointer-events: none;
 }
-/*.banner{
-    height: 25%;
-    padding-block: 2px;
-    font-size: 200%;
-    background-color:rgb(230, 173, 222);
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: #85030B;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.15), 2px 3px 2px rgba(0, 0, 0, 0.15) ;
 }
-*/
+.menu a{
+    padding: 14px;
+    color: #ff7474;
+    text-decoration: none;
+    font-style: bold;
+}
+
+.menu a:hover{
+    background-color: #ff7474;
+    color: #85030B;
+    transition: background-color 350ms;
+}
