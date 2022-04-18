@@ -52,3 +52,14 @@ header {
     color: #85030B;
     transition: background-color 350ms;
 }
+
+.col_esq {
+    float: left;
+    width: 75%;
+}
+
+.col_dir {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
