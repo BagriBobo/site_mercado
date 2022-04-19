@@ -63,3 +63,18 @@ header {
     width: 25%;
     padding-left: 20px;
 }
+
+.card {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.15), 2px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+#promo1 {
+    height: 200px;
+    background-image: url(images/espaguete.jpg);
+    background-position: center;
+}
