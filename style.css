@@ -75,6 +75,10 @@ header {
 
 #promo1 {
     height: 200px;
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
     background-image: url(images/espaguete.jpg);
     background-position: center;
 }
