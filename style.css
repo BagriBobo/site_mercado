@@ -12,7 +12,7 @@ body {
     font-family: Candara, Helvetica, sans-serif;
     color: #ff7474;
     margin: 0;
-    padding: 10px 40px 40px 40px;
+    padding: 10px 50px 50px 50px;
 }
 
 header {
@@ -42,6 +42,7 @@ header {
 }
 
 .menu a {
+    display: block;
     padding: 14px;
     color: #ff7474;
     text-decoration: none;
@@ -311,22 +312,26 @@ header {
     .col_dir {
         float: none;
         width: 100%;
+        padding: 0;
     }
 
     #logoImg {
         aspect-ratio: 128/72;
-        width: 120px;
+        width: 200px;
         height: fit-content;
     }
 
     .menu {
         display: grid;
-        grid-area: 100px;
+        justify-items: center;
+        flex-wrap: wrap;
+        font-size: 4vw;
     }
 
     #promo1 {
         font-size: 4vw;
-        padding: 5px;
+        margin-top: 0;
+        width: 100%;
     }
 
     #frase1 {
@@ -337,4 +342,24 @@ header {
     .promocao {
         font-size: 3vw;
     }
+
+    .social2 {
+        font-size: 4vw;
+    }
+
+    .descriSomos {
+        font-size: 4vw;
+    }
+
+    .disclaimer {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding: 5px 25px 25px 25px;
+    }
+
+
 }
