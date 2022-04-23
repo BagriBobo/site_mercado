@@ -88,10 +88,6 @@ header {
     font-size: 1vw;
 }
 
-#promo1:hover {
-    box-shadow: 8px 8px 10px rgba(255, 61, 74, 0.7);
-}
-
 #frase1 {
     position: absolute;
     bottom: 27px;
@@ -105,10 +101,6 @@ header {
     box-shadow: 0px 0px 5px #888888;
     cursor: pointer;
     transition: box-shadow 500ms;
-}
-
-.sobreImg:hover {
-    box-shadow: 2px 2px 10px rgba(255, 61, 74, 1), -2px -2px 10px rgba(255, 61, 74, 1);
 }
 
 .sobreItens {
@@ -138,10 +130,6 @@ header {
     margin-right: 10px;
 }
 
-.promocao:hover {
-    box-shadow: 2px 2px 10px rgba(255, 61, 74, 1), -2px -2px 10px rgba(255, 61, 74, 1);
-}
-
 .social {
     display: flex;
     flex-wrap: wrap;
@@ -155,11 +143,6 @@ header {
     margin: 10px;
     cursor: pointer;
     border-radius: 50%;
-}
-
-.social img:hover {
-    opacity: 60%;
-    box-shadow: 1px 1px 5px #ff7474, -1px -1px 5px #ff7474;
 }
 
 .produto img {
@@ -186,10 +169,6 @@ header {
     font-weight: bold;
 }
 
-.produto:hover {
-    box-shadow: 5px 10px 15px #ff7474;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -213,14 +192,16 @@ header {
 }
 
 .subCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
     text-align: center;
     padding: 20px;
     cursor: pointer;
 }
 
-.subCard:hover {
-    box-shadow: 2px 2px 10px rgba(255, 61, 74, 1), -2px -2px 10px rgba(255, 61, 74, 1);
-}
 
 .somosItens {
     display: grid;
@@ -347,12 +328,34 @@ header {
         font-size: 4vw;
     }
 
+    .subCard {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
     .descriSomos {
         font-size: 4vw;
     }
 
     .disclaimer {
         font-size: 3vw;
+    }
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 60%;
+        position: relative;
+        height: 0;
+    }
+
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin: 5px;
     }
 
 }
@@ -363,4 +366,31 @@ header {
     }
 
 
+}
+
+@media (hover: hover) {
+    #promo1:hover {
+        box-shadow: 8px 8px 10px rgba(255, 61, 74, 0.7);
+    }
+
+    .sobreImg:hover {
+        box-shadow: 2px 2px 10px rgba(255, 61, 74, 1), -2px -2px 10px rgba(255, 61, 74, 1);
+    }
+
+    .promocao:hover {
+        box-shadow: 2px 2px 10px rgba(255, 61, 74, 1), -2px -2px 10px rgba(255, 61, 74, 1);
+    }
+
+    .social img:hover {
+        opacity: 60%;
+        box-shadow: 1px 1px 5px #ff7474, -1px -1px 5px #ff7474;
+    }
+
+    .produto:hover {
+        box-shadow: 5px 10px 15px #ff7474;
+    }
+
+    .subCard:hover {
+        box-shadow: 2px 2px 10px rgba(255, 61, 74, 1), -2px -2px 10px rgba(255, 61, 74, 1);
+    }
 }
